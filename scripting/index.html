@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<div class="songholder"></div>
+    <!-- nev bar -->
+  
+
+    <!-- songs -->
+
+  <div class="allsongcontainer"></div>
+    <!-- controles -->
+    <!-- songdetail -->
+    <div id="songdetails">
+        <div id="coverimg">
+            <img src="../png/p1.jpg" class="coverimage">
+        </div>
+        <marquee behavior="scroll" direction="left"> <span id="sd_songname"></span>
+            <div class="songoptions"></div>
+        </marquee>
+
+        <!-- nextsongs -->
+<div class="nextsongs">
+
+    
+    <div class="nextsong_contant">
+        <img class="nextsong_cover" src="../png/p1.jpg"></img>
+        <span class="nextsong_name">name here</span>
+        <span class="nextsong_duration">00:00</span>
+        <img src="../png/pause.png" class="nextsong_play">
+    </div>
+    <div class="nextsong_contant">
+        <img class="nextsong_cover" src="../png/p1.jpg"></img>
+        <span class="nextsong_name">name here</span>
+        <span class="nextsong_duration">00:00</span>
+        <img src="../png/pause.png" class="nextsong_play">
+    </div>
+    <div class="nextsong_contant">
+        <img class="nextsong_cover" src="../png/p1.jpg"></img>
+        <span class="nextsong_name">name here</span>
+        <span class="nextsong_duration">00:00</span>
+        <img src="../png/pause.png" class="nextsong_play">
+    </div>
+    <div class="nextsong_contant">
+        <img class="nextsong_cover" src="../png/p1.jpg"></img>
+        <span class="nextsong_name">name here</span>
+        <span class="nextsong_duration">00:00</span>
+        <img src="../png/pause.png" class="nextsong_play">
+    </div>
+    
+</div>
+
+
+    </div>
+    <div class="nevhidetop"></div>
+    <nav>
+        <ul>
+            <li id="home"><a href="#" class="text">Home</a></li>
+            <li id="about"><a href="#" class="text">About</a></li>
+            <div id="searchhendlar">
+
+                <input type="text" placeholder="search for song" id="songnameserch">
+                <button onclick="search()">search</button>
+            </div>
+        </ul>
+    </nav>
+    <div id="nightmode" onclick="day_light()"></div>
+    
+    <div id="songcontroles">
+        <img src="../png/p1.jpg" id="shortimg" >
+        <img src="../png/left.png" id="left" onclick="left_song()">
+        <img src="../png/pause.png" id="play">
+        <img src="../png/right.png" id="right" onclick="right_song()">
+        <input type="range" id="input" value="0">
+        <img src="../png/fullzoom.png" id="fullzoom" onclick="songdetail()">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
